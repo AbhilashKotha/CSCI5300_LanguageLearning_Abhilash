@@ -1,7 +1,4 @@
 ---
-title: Language Learning
+title: Welcome to my blog
 ---
 
-Why am I choosing this new language?
-
-Ans:
