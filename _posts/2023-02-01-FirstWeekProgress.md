@@ -6,7 +6,8 @@ date: 2023-02-01
 In this week’s blog post, I will write about the progress I made last week in learning Python. Though I know a bit about Python, I wanted to learn from the basics, and now I realize that was a good decision. The reason for that is I have learned a lot of new things in the basics. However, it is interesting.
 
 As of now, I have covered the basics like variables, data types, control structures, and functions. I started coding with a simple "Hello, World!" program. And I thought I will share how simple it is in Python when compared with C#.
-In C# if you want to print “Hello, World!”. You can write the code like below:
+
+In C# if I have to display “Hello, World!”. I have to write the code like this:
 
 ![image](https://user-images.githubusercontent.com/113061137/216233292-a5a149cf-799a-455b-a580-8ba37c725b06.png)
 
@@ -20,7 +21,7 @@ In addition to this, I have done the following tasks using python:
 2.	Reverse an input string
 3.	Concatenate two input strings
 4.	Calculate the factorial of an input number
-5.	Check if the input string is palindrome or not
+5.	Check if a given string is a palindrome
 
 
 While doing the <a href="https://github.com/AbhilashKotha/CSCI5300_LanguageLearning_Abhilash/blob/main/PythonFiles/week1/AdditionOfTwoNumbers.py">addition of two numbers</a>, I was initially wrong as I added two inputs as strings instead of converting them to integers first. Later I found that I had to change them to integers and succeeded
@@ -31,8 +32,8 @@ print("sum is: " , int(a)+int(b))
 ```
 For the second task, <a href="https://github.com/AbhilashKotha/CSCI5300_LanguageLearning_Abhilash/blob/main/PythonFiles/week1/ReverseString.py">string reversal</a>, I did not quite understand why we use [::-1] after the input string. Later, I searched the internet on how it works and got to know about slice notation. The concatenation task was again easy as there was nothing to typecast and just adding two inputs does the task. 
 ```
-inputString = input("Enter string you want to reverse: ")
-reversedString = inputString[::-1]
+inputStr = input("Enter string: ")
+reversedString = inputStr[::-1]
 print("Reversed string is :  " , reversedString)
 ```
 
@@ -45,7 +46,7 @@ def calculateFactorial(num):
     else:
         return num * calculateFactorial(num - 1)
 
-input_number = int(input("Enter a number you want to calculate the factorial for: "))
+input_number = int(input("Enter a number:"))
 
 print("Factorial is  : ", calculateFactorial(input_number))
 ```
