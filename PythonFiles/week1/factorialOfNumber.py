@@ -4,6 +4,6 @@ def calculateFactorial(num):
     else:
         return num * calculateFactorial(num - 1)
 
-input_number = int(input("Enter a number you want to calculate the factorial for: "))
+input_number = int(input("Enter a number:"))
 
 print("Factorial is  : ", calculateFactorial(input_number))
