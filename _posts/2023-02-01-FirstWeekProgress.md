@@ -1,11 +1,18 @@
+---
+title: "First week's Progress"
+date: 2023-02-01
+---
+
 In this week’s blog post, I will write about the progress I made last week in learning Python. Though I know a bit about Python, I wanted to learn from the basics, and now I realize that was a good decision. The reason for that is I have learned a lot of new things in the basics. However, it is interesting.
 
 As of now, I have covered the basics like variables, data types, control structures, and functions. I started coding with a simple "Hello, World!" program. And I thought I will share how simple it is in Python when compared with C#.
 In C# if you want to print “Hello, World!”. You can write the code like below:
-image.png
+
+![image](https://user-images.githubusercontent.com/113061137/216228783-71b8a2c2-2e80-49d6-8f1a-213bf9f10e81.png)
+
 But to achieve the same thing in python the code looks as simple as plain English.
 
-image.png
+![image](https://user-images.githubusercontent.com/113061137/216228790-26207ffd-1517-4d53-889d-6954f95e2ced.png)
 
 In addition to this, I have done the following tasks using python:
 
