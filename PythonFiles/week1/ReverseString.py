@@ -1,3 +1,3 @@
-inputString = input("Enter string you want to reverse: ")
-reversedString = inputString[::-1]
+inputStr = input("Enter string: ")
+reversedString = inputStr[::-1]
 print("Reversed string is :  " , reversedString)
