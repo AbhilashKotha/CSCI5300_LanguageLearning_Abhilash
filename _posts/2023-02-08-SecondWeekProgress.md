@@ -74,6 +74,24 @@ print("Emails:", extract_emails(text))
 ```
 In all these exercises, I got at least one error during the first run and those were all listed in the terminal with long descriptions. Those are unhandled exceptions. Now, how can we handle those exceptions? Below is the exercise I did for <a href="https://github.com/AbhilashKotha/CSCI5300_LanguageLearning_Abhilash/blob/main/PythonFiles/week2/exceptionHandling.py">exception handling</a>. Initially, I only handled one exception, ZeroDivisionError but what if the user gives a letter or string in place of a number? How can I handle that? I searched if there is a specific exception that I could use. I did not find any and I used a generic exception that would handle the rest of the exceptions and wrote the exception to the console.  
 
+```python
+def divideTwoNumbers(num1, num2):
+    try:
+        answer = num1 / num2
+        return answer
+    
+    except ZeroDivisionError as e:
+        return "Invalid. No number can be devided by zero"
+    except Exception as e:
+        return "An exception occured: " + str(e)
+
+
+print(divideTwoNumbers(5, 2)) 
+print(divideTwoNumbers(18, 0))
+print(divideTwoNumbers(90, 'a')) 
+print(divideTwoNumbers(40, 0.001)) 
+```
+The coming week, I plan to take some real time examples and explore all the challenges and would like to see to what extent I am able to handle those challenges without taking any online help. 
 
 
 
