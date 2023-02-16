@@ -1,20 +1,22 @@
 import tkinter as tk
 import re
+import random
+import string
 
 def validate_password(password):
     if len(password) < 8:
-        return False, "password length is min 8 characters"
+        return False, "Password < 8 characters"
     if not re.search("[a-zA-Z]", password):
-        return False, "minimum of one alphabet in password."
+        return False, "Password has no letters."
     if not re.search("[0-9]", password):
-        return False, "minimum of one number in password"
+        return False, "Password has no numbers."
     if not re.search("[!@#$%^&*()_+]", password):
-        return False, "minimum of one special character in password."
+        return False, "Password has no special characters."
     return True, ""
 
 def validate_username(username):
     if not re.match("^[a-zA-Z]*$", username):
-        return False, "username - only alphabets allowed."
+        return False, "Username can only contain letters."
     return True, ""
 
 def submit_form():
@@ -32,6 +34,15 @@ def submit_form():
         status_label.config(text="User created successfully!")
     else:
         status_label.config(text=password_error + "\n" + username_error)
+
+def generate_password():
+    length = 4
+    letters = string.ascii_letters
+    digits = string.digits
+    special_chars = string.punctuation
+    password = "".join((random.choice(letters)+ random.choice(digits) + random.choice(special_chars)) for i in range(length))
+    password_entry.delete(0, tk.END)
+    password_entry.insert(0, password)
 
 root = tk.Tk()
 root.title("Signup Form")
@@ -62,7 +73,10 @@ def hide_password():
     show_password_button.config(text="👁️", command=show_password)
 
 show_password_button = tk.Button(root, text="👁️", command=show_password)
-show_password_button.pack()
+show_password_button.pack(side="top")
+
+generate_password_button = tk.Button(root, text="Generate Password", command=generate_password)
+generate_password_button.pack(side="top")
 
 submit_button = tk.Button(root, text="Submit", command=submit_form)
 submit_button.pack()
