@@ -105,7 +105,7 @@ def generate_password():
 
 After clearing all the challenges with random string generation, regular expressions, and button placements, I was able to create a good desktop application for signup that looks like below <a href="https://github.com/AbhilashKotha/CSCI5300_LanguageLearning_Abhilash/blob/main/PythonFiles/week3/windowsApp.py">(link to full code)</a>.
 
-![image](https://github.com/AbhilashKotha/CSCI5300_LanguageLearning_Abhilash/blob/main/PythonFiles/week3/imageapp.png)
+![image](https://user-images.githubusercontent.com/113061137/219257347-20ec9116-01e9-4fe4-849c-f5eadfec0cec.png)
 
 Though this is a working application, I am not quite satisfied with the control that I have over the UI, sometime in the next few weeks I want to explore more on better UI options for python desktop applications. 
 
