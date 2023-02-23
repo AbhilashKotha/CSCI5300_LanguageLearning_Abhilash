@@ -10,7 +10,7 @@ Just to recall, once the user enters the details, I stored them in a text file c
 
 ![image](https://user-images.githubusercontent.com/113061137/220812626-71efd9b0-1ebf-4b52-ba87-28d142c0c7f7.png)
 
-Instead of creating a separate window for sign-in, I have just created a new button that does the job. Why? Because the signup and sign-in are just based on two fields. Once an existing user enters their details and clicks on the sign-in button, the application checks if the details entered by the user are correct or not against the ones stored in the "users.txt" file. Below is the code that validates the users against the database. This is where the challenge was this time. I know how to read the file and I know how to break a string on a delimiter. But I had difficulty mapping the passwords with respective usernames. This is what I wrote in the beginning. This code lets user sign in with any a user name and password combination from the database.
+Instead of creating a separate window for sign-in, I have just created a new button that does the job. Why? Because the signup and sign-in are just based on two fields. Once an existing user enters their details and clicks on the sign-in button, the application checks if the details entered by the user are correct or not against the ones stored in the "users.txt" file. Below is the code that validates the users against the database. This is where the challenge was this time. I know how to read the file and I know how to break a string on a delimiter. But I had difficulty mapping the passwords with respective usernames. This is what I wrote in the beginning. This code lets user sign in with any username and password combination from the database.
 
 ```Python
 def submit_sign_in_form():
