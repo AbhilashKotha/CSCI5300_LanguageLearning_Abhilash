@@ -10,6 +10,7 @@ My First Month of learning python was just small to medium programs with just a 
 I have started leaning python with the help of two Youtube videos that I found interesting and helpful. Below are their links.
 
 <a href="https://www.youtube.com/watch?v=zuxzE7--RYM">https://www.youtube.com/watch?v=zuxzE7--RYM</a>
+<br>
 <a href="https://www.youtube.com/watch?v=1UvTNMH7zDo">https://www.youtube.com/watch?v=1UvTNMH7zDo</a>
 
 
