@@ -3,15 +3,19 @@ title: "Fifth week - Web Development with Django"
 date: 2023-03-01
 ---
 My First Month of learning python was just small to medium programs with just a single file. I decided I must take up complex tasks and asked the professor if I switch to Python Web development and she said it is okay.  This is the first time I am doing web development in python. I chose Django for the same. Below is what my directory tree looks like. 
- 
+
+![image](https://user-images.githubusercontent.com/113061137/222328579-ced1a035-2fc4-4a69-baca-d23e7accd428.png)
+
 
 I have started leaning python with the help of two Youtube videos that I found interesting and helpful. Below are their links.
 
-https://www.youtube.com/watch?v=zuxzE7--RYM 
-https://www.youtube.com/watch?v=1UvTNMH7zDo 
+<a href="https://www.youtube.com/watch?v=zuxzE7--RYM">https://www.youtube.com/watch?v=zuxzE7--RYM</a>
+<a href="https://www.youtube.com/watch?v=1UvTNMH7zDo">https://www.youtube.com/watch?v=1UvTNMH7zDo</a>
 
 
 These videos were instrumental in helping me understand the basic concepts of Django and build my first web application. The First tutorial provided a solid foundation of Django concepts, such as views, templates, settings, and URLs. I have created my first project and an app to display a small HTML page. 
+
+![image](https://user-images.githubusercontent.com/113061137/222328876-b77e44ba-0f52-4376-ba20-c5b6f51e82b9.png)
 
 
 As I started building my web application, I ran into a few challenges. One of the main challenges I faced was figuring out how to add references to multiple places, such as URLs and settings.py (I have listed below some of the snippets from my code). However, with the help of online resources such as Stack Overflow the Django documentation, I was able to overcome these challenges. What I did not understand was, python is so advanced, is it not possible to detect some folders without adding the reference to it? (Maybe there is a different way! I will try to figure it out)
@@ -67,6 +71,6 @@ django-admin startproject firstWebapplicationWithDjango
 
 With the help of the second video, I started writing authentication and authorization code. This is a more complex topic that requires a deeper understanding of Django's built-in authentication and authorization system with the libraries. Although I am still in the process of learning and completing this part of the tutorial, I am excited to see how I can incorporate this functionality into my web application.
 
-image
+![image](https://user-images.githubusercontent.com/113061137/222328920-46f7e7ca-6edd-4fc1-a13e-f68bebb669c0.png)
 
 Overall, my journey learning web development with Django has been exciting and challenging. With the help of the two videos and online resources, I was able to gain a solid understanding of the core concepts of Django and build my first web application. I hope to complete this by next week and add some more functionalities to the application.
