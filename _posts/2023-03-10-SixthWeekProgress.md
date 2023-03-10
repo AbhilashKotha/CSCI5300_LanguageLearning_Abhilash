@@ -43,3 +43,5 @@ The initial Home, login and signup pages were looking very plain and clumsy. I u
 ![image](https://user-images.githubusercontent.com/113061137/224431861-a6ff2703-f4a5-4576-b29f-e1e2830e0cc6.png)
 
 <a href="https://github.com/AbhilashKotha/CSCI5300_LanguageLearning_Abhilash/blob/main/PythonFiles\week5\firstWebapplicationWithDjango\firstWebapplicationWithDjango\urls.py">urls.py</a>
+
+for the
