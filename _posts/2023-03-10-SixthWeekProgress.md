@@ -35,8 +35,11 @@ user = authenticate(username=username, password=pass1)
 ```
 The initial Home, login and signup pages were looking very plain and clumsy. I used some simple CSS styles to make it cleaner.Below are teh screenshots of the pages and errors.
 
-
-
-![image](https://user-images.githubusercontent.com/113061137/222328579-ced1a035-2fc4-4a69-baca-d23e7accd428.png)
+![image](https://user-images.githubusercontent.com/113061137/224431744-ff11b5f9-9789-47a8-943a-fc59e57c27a3.png)
+![image](https://user-images.githubusercontent.com/113061137/224431773-054fe5cd-92b1-46ea-befa-9b402adb2106.png)
+![image](https://user-images.githubusercontent.com/113061137/224431778-f86912a0-c4b4-4668-91da-1f8ce29bffb0.png)
+![image](https://user-images.githubusercontent.com/113061137/224431792-f82d345c-3db5-4ae5-9a6e-4157110bf40c.png)
+![image](https://user-images.githubusercontent.com/113061137/224431840-972f4a26-2f8f-411d-89c7-412d517f1399.png)
+![image](https://user-images.githubusercontent.com/113061137/224431861-a6ff2703-f4a5-4576-b29f-e1e2830e0cc6.png)
 
 <a href="https://github.com/AbhilashKotha/CSCI5300_LanguageLearning_Abhilash/blob/main/PythonFiles\week5\firstWebapplicationWithDjango\firstWebapplicationWithDjango\urls.py">urls.py</a>
