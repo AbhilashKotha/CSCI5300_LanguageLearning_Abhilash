@@ -11,7 +11,7 @@ Initially I started with the home page, which has a sign in button and a sign up
 
 <a href="https://www.youtube.com/watch?v=1UvTNMH7zDo">https://www.youtube.com/watch?v=1UvTNMH7zDo</a>
 
-First step, I started with the implementation of signup functionality. I designed a simple html page that asks for the user information and has a sumbit button. One great learning here is <code>csrf_token</code> which is a Cross-Site Request Forgery (CSRF) token to a form that is used as a security measure to protect against CSRF attacks, which are a type of attack where an attacker can trick a user into executing unwanted actions on a website, by submitting a form with malicious data. Once the user completes the form, the application call the function from views.py.In this function I took all the parameters passed from the interface into the parameters and the used the create_user function of the auth library to create the user.
+First step, I started with the implementation of signup functionality. I designed a simple <a href="https://github.com/AbhilashKotha/CSCI5300_LanguageLearning_Abhilash/blob/main/PythonFiles/week5\firstWebapplicationWithDjango/authentication/templates/authentication/signup.html">html page</a> that asks for the user information and has a sumbit button. One great learning here is <code>csrf_token</code> which is a Cross-Site Request Forgery (CSRF) token to a form that is used as a security measure to protect against CSRF attacks, which are a type of attack where an attacker can trick a user into executing unwanted actions on a website, by submitting a form with malicious data. Once the user completes the form, the application call the function from <a href="https://github.com/AbhilashKotha/CSCI5300_LanguageLearning_Abhilash/blob/main/PythonFiles/week5\firstWebapplicationWithDjango/authentication/templates/authentication/views.py">views.py</a>.In this function I took all the parameters passed from the interface into the parameters and the used the create_user function of the auth library to create the user.
 
 ```python
         myuser = User.objects.create_user(username, email, pass1)
@@ -20,7 +20,7 @@ First step, I started with the implementation of signup functionality. I designe
         myuser.save()
         messages.success(request, "Your Account has been created succesfully!")
 ```
-Once the user is created, the application will redirect the use to signin page for which I wrote a simple html page which takes the user information. After user clicks on the signin button, the application calls the function from views.py to complete the signin. The code looks like this: I have used <code>authenticate</code> function to authenticate the user. The application takes the users to home page once the signin is complete.
+Once the user is created, the application will redirect the use to <a href="https://github.com/AbhilashKotha/CSCI5300_LanguageLearning_Abhilash/blob/main/PythonFiles/week5\firstWebapplicationWithDjango/authentication/templates/authentication/signin.html">signin page</a> for which I wrote a simple html page which takes the user information. After user clicks on the signin button, the application calls the function from views.py to complete the signin. The code looks like this: I have used <code>authenticate</code> function to authenticate the user. The application takes the users to home page once the signin is complete.
 
 ```python
 user = authenticate(username=username, password=pass1)
@@ -42,5 +42,15 @@ The initial Home, login and signup pages were looking very plain and clumsy. I u
 ![image](https://user-images.githubusercontent.com/113061137/224431840-972f4a26-2f8f-411d-89c7-412d517f1399.png)
 ![image](https://user-images.githubusercontent.com/113061137/224431861-a6ff2703-f4a5-4576-b29f-e1e2830e0cc6.png)
 
-<a href="https://github.com/AbhilashKotha/CSCI5300_LanguageLearning_Abhilash/blob/main/PythonFiles\week5\firstWebapplicationWithDjango\firstWebapplicationWithDjango\urls.py">urls.py</a>
+Isn't it looking too smooth till this point? But it was not as easy as it sound here. I had challenges in setting up the migrations, understanding the variables, and as always updating the dependencies in multiple place. One moajor thing was with <code>APPEND_SLASH</code> parameter in the settings.py file. Apparently, Django redirects URLs that do not end in a slash ("/") to the same URL with a trailing slash. This behavior is controlled by the APPEND_SLASH setting in Django. It took me a while to figure thsi out. Another thing was with the is_active propertly in the signup function which is by default set to true and needs to be modifed according to our need. The migrations was another frustation, one moment, it works and the next moment it does not work. I had to clear all the migartions and re run them to ensure that there were no cache that would cause errors. 
+
+```bash
+rm -f authentication/migrations/*.py
+python manage.py migrate authentication zero
+python manage.py makemigrations authentication
+python manage.py migrate authentication
+
+```
+
+However, a frustating week of learning but I have learnt some good basics. Next week, I will try to implement email functionality to verify the users. This may need some work with gmail APIs, but I think that would also be a good learning.
 
