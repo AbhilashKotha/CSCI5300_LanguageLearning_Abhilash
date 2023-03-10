@@ -11,7 +11,7 @@ Initially I started with the home page, which has a sign in button and a sign up
 
 <a href="https://www.youtube.com/watch?v=1UvTNMH7zDo">https://www.youtube.com/watch?v=1UvTNMH7zDo</a>
 
-First step, I started with the implementation of signup functionality. I designed a simple html page that asks for the user information and has a sumbit button. One great learning here is <code>{% csrf_token %}</code> which is a Cross-Site Request Forgery (CSRF) token to a form that is used as a security measure to protect against CSRF attacks, which are a type of attack where an attacker can trick a user into executing unwanted actions on a website, by submitting a form with malicious data. Once the user completes the form, the application call the function from views.py.In this function I took all the parameters passed from the interface into the parameters and the used the create_user function of the auth library to create the user.
+First step, I started with the implementation of signup functionality. I designed a simple html page that asks for the user information and has a sumbit button. One great learning here is <code>csrf_token</code> which is a Cross-Site Request Forgery (CSRF) token to a form that is used as a security measure to protect against CSRF attacks, which are a type of attack where an attacker can trick a user into executing unwanted actions on a website, by submitting a form with malicious data. Once the user completes the form, the application call the function from views.py.In this function I took all the parameters passed from the interface into the parameters and the used the create_user function of the auth library to create the user.
 
 ```python
         myuser = User.objects.create_user(username, email, pass1)
