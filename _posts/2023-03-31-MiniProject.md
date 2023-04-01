@@ -17,24 +17,24 @@ Here are the features
   - View, Modify and delete items from the to-do list
   - Add a due date to the to-do item
 
-  Below are the screenshots of the application. 
+Below are the screenshots of the application. 
 
   <Images to paste>
 
-  What are my major learnings from this exercise?
+What are my major learnings from this exercise?
 
-  - I have always used Github as a code repository and even for automation of release tasks but this is the first time I am using Github issues feature. It is a feature that allows us to easily plan and complete actions for all the team members without using any external tools. 
-  - Tkinter: Though I have used Tkinter library in past for learning exercises, this time it was good learning working on multiple tabs. 
-  - SQLite: I have good knowledge on MS SQL but never used SQLite. I felt stupid for not knowing how simple SQLite is to use with python applications. 
+- I have always used Github as a code repository and even for automation of release tasks but this is the first time I am using Github issues feature. It is a feature that allows us to easily plan and complete actions for all the team members without using any external tools. 
+- Tkinter: Though I have used Tkinter library in past for learning exercises, this time it was good learning working on multiple tabs. 
+- SQLite: I have good knowledge on MS SQL but never used SQLite. I felt stupid for not knowing how simple SQLite is to use with python applications. 
 
-  What were the challenges then?
+What were the challenges then?
 
-  - There were not many challenges with the technical implementation but we faced challenges in collaboration due to different class schedules of the team members. We managed to get it done at the end though.
+- There were not many challenges with the technical implementation but we faced challenges in collaboration due to different class schedules of the team members. We managed to get it done at the end though.
 
-  - For the UI design, there were not many customization options available in Tkinter library. We did not find them at least.
-  - In addition to these, I also faced issues in handling the input fields. For example, While accessing the text of the input field, I was getting braces { } around the text. I had to then use rstrip to exclude them Below is the code for the same.
-  
-  ```python
+- For the UI design, there were not many customization options available in Tkinter library. We did not find them at least.
+- In addition to these, I also faced issues in handling the input fields. For example, While accessing the text of the input field, I was getting braces { } around the text. I had to then use rstrip to exclude them Below is the code for the same.
+
+```python
 
       def edit_note(self):
         selection = self.note_listbox.curselection()
@@ -47,14 +47,13 @@ Here are the features
             note.update(note_id, note_text)
             self.note_entry.delete("1.0", "end")
             self.load_notes()
-    ```
+```
 
+What can we improve next?
 
-  What can we improve next?
+- One thing that definitely needs improvement is decoupling the code more efficiently. Current design has the database operations also part of the notes and todo modules which can be moved to a different module.
 
-  - One thing that definitely needs improvement is decoupling the code more efficiently. Current design has the database operations also part of the notes and todo modules which can be moved to a different module.
-
-  - Defining the scope of work so that every team member gets enough work to complete before the due date.
+- Defining the scope of work so that every team member gets enough work to complete before the due date.
 
 
 
