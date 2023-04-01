@@ -19,12 +19,15 @@ Here are the features
 
 Below are the screenshots of the application. 
 
-  <Images to paste>
+![image](https://user-images.githubusercontent.com/113061137/229258547-8f4bfe93-ee17-46bb-b2b0-00863253186c.png)
+![image](https://user-images.githubusercontent.com/113061137/229258554-b06e6051-55fc-4420-8aa7-c0e1a3822e96.png)
+
 
 What are my major learnings from this exercise?
 
 - I have always used Github as a code repository and even for automation of release tasks but this is the first time I am using Github issues feature. It is a feature that allows us to easily plan and complete actions for all the team members without using any external tools. 
-- Tkinter: Though I have used Tkinter library in past for learning exercises, this time it was good learning working on multiple tabs. 
+- <code>Tkinter</code>: Though I have used Tkinter library in past for learning exercises, this time it was good learning working on multiple tabs. 
+  
 - SQLite: I have good knowledge on MS SQL but never used SQLite. I felt stupid for not knowing how simple SQLite is to use with python applications. 
 
 What were the challenges then?
@@ -57,14 +60,6 @@ What can we improve next?
 
 
 
-
 <code>from django.contrib.auth</code>
 <a href="https://github.com/AbhilashKotha/CSCI5300_LanguageLearning_Abhilash/blob/main/PythonFiles/week5\firstWebapplicationWithDjango/authentication/templates/authentication/signup.html">HTML page</a> 
-```python
-        myuser = User.objects.create_user(username, email, pass1)
-        myuser.first_name = fname
-        myuser.last_name = lname
-        myuser.save()
-        messages.success(request, "Your Account has been created succesfully!")
-```
 
