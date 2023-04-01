@@ -38,8 +38,7 @@ What were the challenges then?
 - In addition to these, I also faced issues in handling the input fields. For example, While accessing the text of the input field, I was getting braces { } around the text. I had to then use rstrip to exclude them Below is the code for the same.
 
 ```python
-
-      def edit_note(self):
+    def edit_note(self):
         selection = self.note_listbox.curselection()
         note = Note(self.db_name)
         button_text = self.edit_note_button.cget('text')
@@ -50,6 +49,21 @@ What were the challenges then?
             note.update(note_id, note_text)
             self.note_entry.delete("1.0", "end")
             self.load_notes()
+```
+- Another thing that was a little bit confusing was the date picker operations. Below is the code after fixing all the issues with the date formating.
+
+```python
+    def on_todo_select(self, event):
+        selection = event.widget.curselection()
+        todo = Todo(self.db_name)
+        if selection:
+            todo_id = event.widget.get(selection[0])[0]
+            text = (todo.get_by_id(todo_id))[0]
+            date_string = (todo.get_by_id(todo_id))[1]
+            date_value = datetime.strptime(date_string, '%m/%d/%y').date()
+            self.todo_datepicker.set_date(date_value)
+            self.todo_entry.delete("1.0", "end")
+            self.todo_entry.insert("1.0", text)
 ```
 
 What can we improve next?
