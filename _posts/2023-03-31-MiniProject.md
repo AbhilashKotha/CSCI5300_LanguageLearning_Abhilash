@@ -3,7 +3,7 @@ title: "Mini Project - Notes and Todo Manager"
 date: 2023-03-31
 ---
 
-After learning for six weeks and a short break, it's time for a mini project. We were asked to scope the project such that it is not a lot of work for the limited time available and we did just that.
+After learning Python for six weeks and a short spring break, it's time for a mini project. We were asked to scope the project such that it is not a lot of work for the limited time available and we did just that.
 
 We developed Notes and Todos manager application as part of the project using the tkinter library in python.
 
@@ -37,7 +37,7 @@ What are my major learnings from this exercise?
 
 What were the challenges then?
 
-- There were not many challenges with the technical implementation but we faced challenges in collaboration due to different class schedules of the team members. We managed to get it done at the end though.
+- There were not many challenges with the technical implementation but we faced challenges in collaboration due to the different class schedules of the team members. We managed to get it done in the end though.
 
 - For the UI design, there were not many customization options available in Tkinter library. We did not find them at least.
 - In addition to these, I also faced issues in handling the input fields. For example, While accessing the text of the input field, I was getting braces { } around the text. I had to then use rstrip to exclude them Below is the <a href="https://github.com/SLUSE-Spring2022/miniproject-se_python/blob/main/gui.py">code</a> for the same.
@@ -55,7 +55,7 @@ What were the challenges then?
             self.note_entry.delete("1.0", "end")
             self.load_notes()
 ```
-- Another thing that was a little bit confusing was the date picker operations. Below is the <a href="https://github.com/SLUSE-Spring2022/miniproject-se_python/blob/main/gui.py">code</a> after fixing all the issues with the date formating.
+- Another thing that was a little bit confusing was the date picker operations. Below is the <a href="https://github.com/SLUSE-Spring2022/miniproject-se_python/blob/main/gui.py">code</a> after fixing all the issues with the date formatting.
 
 ```python
     def on_todo_select(self, event):
@@ -76,5 +76,7 @@ What can we improve next?
 - One thing that definitely needs improvement is decoupling the code more efficiently. Current design has the database operations also part of the notes and todo modules which can be moved to a different module.
 
 - Defining the scope of work so that every team member gets enough work to complete before the due date.
+
+Overall, this was a simple yet powerful exercise to put the learning into implementation and that too with a short team. Looking forward to applying the knowledge in the major project. 
 
 
