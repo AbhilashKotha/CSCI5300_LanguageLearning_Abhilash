@@ -22,6 +22,11 @@ Below are the screenshots of the application.
 ![image](https://user-images.githubusercontent.com/113061137/229258547-8f4bfe93-ee17-46bb-b2b0-00863253186c.png)
 ![image](https://user-images.githubusercontent.com/113061137/229258554-b06e6051-55fc-4420-8aa7-c0e1a3822e96.png)
 
+We decided to go with at least 3 modules so that each person will get a module to work on. Below are the three modules.
+
+1. <code>gui.py</code> - User interface with two tabs, one each for notes and todos.
+2. <code>notes.py</code> - Module that takes care of CRUD operation related to the notes
+3. <code>todos.py</code> - Module that takes care of CRUD operation related to the todos
 
 What are my major learnings from this exercise?
 
@@ -35,7 +40,7 @@ What were the challenges then?
 - There were not many challenges with the technical implementation but we faced challenges in collaboration due to different class schedules of the team members. We managed to get it done at the end though.
 
 - For the UI design, there were not many customization options available in Tkinter library. We did not find them at least.
-- In addition to these, I also faced issues in handling the input fields. For example, While accessing the text of the input field, I was getting braces { } around the text. I had to then use rstrip to exclude them Below is the code for the same.
+- In addition to these, I also faced issues in handling the input fields. For example, While accessing the text of the input field, I was getting braces { } around the text. I had to then use rstrip to exclude them Below is the <a href="https://github.com/SLUSE-Spring2022/miniproject-se_python/blob/main/gui.py">code</a> for the same.
 
 ```python
     def edit_note(self):
@@ -50,7 +55,7 @@ What were the challenges then?
             self.note_entry.delete("1.0", "end")
             self.load_notes()
 ```
-- Another thing that was a little bit confusing was the date picker operations. Below is the code after fixing all the issues with the date formating.
+- Another thing that was a little bit confusing was the date picker operations. Below is the <a href="https://github.com/SLUSE-Spring2022/miniproject-se_python/blob/main/gui.py">code</a> after fixing all the issues with the date formating.
 
 ```python
     def on_todo_select(self, event):
@@ -72,8 +77,4 @@ What can we improve next?
 
 - Defining the scope of work so that every team member gets enough work to complete before the due date.
 
-
-
-<code>from django.contrib.auth</code>
-<a href="https://github.com/AbhilashKotha/CSCI5300_LanguageLearning_Abhilash/blob/main/PythonFiles/week5\firstWebapplicationWithDjango/authentication/templates/authentication/signup.html">HTML page</a> 
 
